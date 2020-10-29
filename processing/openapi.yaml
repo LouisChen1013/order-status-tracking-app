@@ -1,0 +1,65 @@
+openapi: 3.0.0
+# Added by API Auto Mocking Plugin
+# servers:
+#   - description: SwaggerHub API Auto Mocking
+#     url: https://virtserver.swaggerhub.com/LouisChen1013/FoodOrderingAPI/1.0.0
+info:
+  description: This is an application for online food ordering service that allows for customers to order from a wider range of restaurants and cuisines.
+  version: "1.0.0"
+  title: Food Ordering API
+  contact:
+    email: chenhonglin1013@gmail.com
+
+tags:
+  - name: stats
+    description: Operations available to get stats
+
+paths:
+  /orders/get_stats:
+    get:
+      tags:
+        - stats
+      summary: gets order stats
+      operationId: app.get_stats
+      description: Gets order and payment details statistics
+      responses:
+        "200":
+          description: Successfully returned a list of order and payment events
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: "#/components/schemas/OrderStats"
+        "400":
+          description: "invalid request"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+components:
+  schemas:
+    OrderStats:
+      required:
+        - num_order
+        - num_payment
+        - sum_order_total
+        - avg_order_total
+      properties:
+        num_order:
+          type: integer
+          example: 500000
+        sum_order_total:
+          type: integer
+          example: 2000000
+        avg_order_total:
+          type: integer
+          example: 2000000
+        num_payment:
+          type: integer
+          example: 500000
+      type: object

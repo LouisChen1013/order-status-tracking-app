@@ -1,0 +1,105 @@
+openapi: 3.0.0
+# Added by API Auto Mocking Plugin
+# servers:
+#   - description: SwaggerHub API Auto Mocking
+#     url: https://virtserver.swaggerhub.com/LouisChen1013/FoodOrderingAPI/1.0.0
+info:
+  description: This is an application for online food ordering service that allows for customers to order from a wider range of restaurants and cuisines.
+  version: "1.0.0"
+  title: Food Ordering API
+  contact:
+    email: chenhonglin1013@gmail.com
+
+tags:
+  - name: customers
+    description: Operations available to customers
+  - name: restaurants
+    description: Operations available to restaurants
+
+paths:
+  /orders/add_foods:
+    post:
+      tags:
+        - customers
+      summary: reports an order
+      operationId: app.add_order
+      description: Adds a new order to the system
+      responses:
+        "201":
+          description: order created
+        "400":
+          description: "invalid input, object invalid"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Order"
+        description: Order item to add
+  /orders/payments:
+    post:
+      tags:
+        - restaurants
+      summary: reports a payment
+      operationId: app.payment
+      description: Adds a new payment to the system
+      responses:
+        "201":
+          description: payment created
+        "400":
+          description: "invalid input, object invalid"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Payment"
+        description: Payment item to add
+components:
+  schemas:
+    Order:
+      type: object
+      required:
+        - order_id
+        - customer_id
+        - timestamp
+        - restaurant
+        - order_total
+      properties:
+        order_id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        customer_id:
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0852
+        timestamp:
+          type: string
+          format: date-time
+          example: "2016-08-29T09:12:33.001Z"
+        restaurant:
+          type: string
+          example: McDonald's
+        order_total:
+          type: number
+          example: 1235.60
+    Payment:
+      type: object
+      required:
+        - payment_id
+        - customer_id
+        - timestamp
+        - restaurant
+      properties:
+        payment_id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0853
+        customer_id:
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0854
+        timestamp:
+          type: string
+          format: date-time
+          example: "2016-08-29T09:12:33.001Z"
+        restaurant:
+          type: string
+          example: McDonald's

@@ -1,0 +1,135 @@
+openapi: 3.0.0
+# Added by API Auto Mocking Plugin
+# servers:
+#   - description: SwaggerHub API Auto Mocking
+#     url: https://virtserver.swaggerhub.com/LouisChen1013/FoodOrderingAPI/1.0.0
+info:
+  description: This is an application for online food ordering service that allows for customers to order from a wider range of restaurants and cuisines.
+  version: "1.0.0"
+  title: Food Ordering API
+  contact:
+    email: chenhonglin1013@gmail.com
+
+tags:
+  - name: customers
+    description: Operations available to customers
+  - name: restaurants
+    description: Operations available to restaurants
+
+paths:
+  /orders/add_foods:
+    get:
+      tags:
+        - customers
+      summary: gets order details
+      operationId: app.get_add_order
+      description: Gets order details added after a timestamp
+      parameters:
+        - name: timestamp
+          in: query
+          description: Limits the number of items on a page
+          schema:
+            type: string
+            format: date-time
+            example: "2016-08-29T09:12:33.001Z"
+      responses:
+        "200":
+          description: Successfully returned a list of add order events
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Order"
+        "400":
+          description: "invalid request"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+  /orders/payments:
+    get:
+      tags:
+        - restaurants
+      summary: gets payment details
+      operationId: app.get_payment
+      description: Gets payment details added after a timestamp
+      parameters:
+        - name: timestamp
+          in: query
+          description: Limits the number of items on a page
+          schema:
+            type: string
+            format: date-time
+            example: "2016-08-29T09:12:33.001Z"
+      responses:
+        "200":
+          description: Successfully returned a list of payment events
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Payment"
+        "400":
+          description: "invalid request"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+components:
+  schemas:
+    Order:
+      type: object
+      required:
+        - order_id
+        - customer_id
+        - timestamp
+        - restaurant
+        - order_total
+      properties:
+        order_id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        customer_id:
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0852
+        timestamp:
+          type: string
+          format: date-time
+          example: "2016-08-29T09:12:33.001Z"
+        restaurant:
+          type: string
+          example: McDonald's
+        order_total:
+          type: number
+          example: 1234.60
+    Payment:
+      type: object
+      required:
+        - payment_id
+        - customer_id
+        - timestamp
+        - restaurant
+      properties:
+        payment_id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0853
+        customer_id:
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0854
+        timestamp:
+          type: string
+          format: date-time
+          example: "2016-08-29T09:12:33.001Z"
+        restaurant:
+          type: string
+          example: McDonald's

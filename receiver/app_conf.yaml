@@ -1,0 +1,9 @@
+version: 1
+add_order:
+  url: http://localhost:8090/orders/add_foods
+payment:
+  url: http://localhost:8090/orders/payments
+events:
+  hostname: kafka-lab.westus2.cloudapp.azure.com
+  port: 9092
+  topic: events
