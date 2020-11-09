@@ -1,0 +1,48 @@
+2020-11-09 05:54:36,755 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 05:54:36,758 - basicLogger - DEBUG - Current Statistics: {'timestamp': '2020-11-09T05:54:36.757255Z', 'num_order': 0, 'num_payment': 0, 'sum_order_total': 0, 'avg_order_total': 0}
+2020-11-09 05:54:36,759 - basicLogger - INFO - Start Periodic has ended
+2020-11-09 05:54:41,757 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 05:54:56,753 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 05:55:11,756 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 06:02:18,803 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 06:02:18,823 - basicLogger - ERROR - HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: /orders/add_foods?timestamp=2020-11-09T05:54:36.757255Z (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd2f29dacd0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2020-11-09 06:02:18,823 - basicLogger - INFO - Start Periodic has ended
+2020-11-09 06:02:23,803 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 06:02:23,810 - basicLogger - ERROR - HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: /orders/add_foods?timestamp=2020-11-09T05:54:36.757255Z (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd2f29d6130>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2020-11-09 06:02:23,810 - basicLogger - INFO - Start Periodic has ended
+2020-11-09 06:02:28,802 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 06:02:28,808 - basicLogger - ERROR - HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: /orders/add_foods?timestamp=2020-11-09T05:54:36.757255Z (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd2f29f9820>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2020-11-09 06:02:28,808 - basicLogger - INFO - Start Periodic has ended
+2020-11-09 06:02:33,806 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 06:02:33,823 - basicLogger - ERROR - HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: /orders/add_foods?timestamp=2020-11-09T05:54:36.757255Z (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd2f29fd2b0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2020-11-09 06:02:33,824 - basicLogger - INFO - Start Periodic has ended
+2020-11-09 06:17:11,642 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 06:17:11,666 - basicLogger - ERROR - HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: /orders/add_foods?timestamp=2020-11-09T05:54:36.757255Z (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd3638d6520>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2020-11-09 06:17:11,667 - basicLogger - INFO - Start Periodic has ended
+2020-11-09 06:17:16,642 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 06:17:16,666 - basicLogger - ERROR - HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: /orders/add_foods?timestamp=2020-11-09T05:54:36.757255Z (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd3638d6610>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2020-11-09 06:17:16,667 - basicLogger - INFO - Start Periodic has ended
+2020-11-09 06:17:21,638 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 06:17:21,729 - basicLogger - ERROR - HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: /orders/add_foods?timestamp=2020-11-09T05:54:36.757255Z (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd3638f2070>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2020-11-09 06:17:21,729 - basicLogger - INFO - Start Periodic has ended
+2020-11-09 06:17:26,640 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 06:17:26,653 - basicLogger - ERROR - HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: /orders/add_foods?timestamp=2020-11-09T05:54:36.757255Z (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd3638f2ac0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2020-11-09 06:17:26,654 - basicLogger - INFO - Start Periodic has ended
+2020-11-09 06:17:31,639 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 06:17:31,650 - basicLogger - ERROR - HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: /orders/add_foods?timestamp=2020-11-09T05:54:36.757255Z (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd3638fb550>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2020-11-09 06:17:31,650 - basicLogger - INFO - Start Periodic has ended
+2020-11-09 06:17:36,639 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 06:17:36,660 - basicLogger - ERROR - HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: /orders/add_foods?timestamp=2020-11-09T05:54:36.757255Z (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd3638fbfa0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2020-11-09 06:17:36,660 - basicLogger - INFO - Start Periodic has ended
+2020-11-09 06:17:41,641 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 06:17:41,650 - basicLogger - ERROR - HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: /orders/add_foods?timestamp=2020-11-09T05:54:36.757255Z (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd3638f2850>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2020-11-09 06:17:41,651 - basicLogger - INFO - Start Periodic has ended
+2020-11-09 06:17:46,641 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 06:17:46,696 - basicLogger - ERROR - HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: /orders/add_foods?timestamp=2020-11-09T05:54:36.757255Z (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd3638d67f0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2020-11-09 06:17:46,697 - basicLogger - INFO - Start Periodic has ended
+2020-11-09 06:19:54,416 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 06:19:54,449 - basicLogger - ERROR - HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: /orders/add_foods?timestamp=2020-11-09T05:54:36.757255Z (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc3980d7c10>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2020-11-09 06:19:54,449 - basicLogger - INFO - Start Periodic has ended
+2020-11-09 06:19:59,419 - basicLogger - INFO - Start Periodic Processing
+2020-11-09 06:19:59,430 - basicLogger - ERROR - HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: /orders/add_foods?timestamp=2020-11-09T05:54:36.757255Z (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc3980d7d00>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2020-11-09 06:19:59,431 - basicLogger - INFO - Start Periodic has ended

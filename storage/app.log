@@ -1,0 +1,2 @@
+2020-11-09 05:54:09,951 - basicLogger - INFO - Connecting to DB. Hostname:kafka-lab.westus2.cloudapp.azure.com, Port:3306
+2020-11-09 06:18:05,111 - basicLogger - INFO - Connecting to DB. Hostname:kafka-lab.westus2.cloudapp.azure.com, Port:3306
