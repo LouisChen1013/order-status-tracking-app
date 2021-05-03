@@ -7,4 +7,19 @@ The requests are stored to allow the following:
 * Manual viewing payments by restaurants
 * Analysis of the data for restaurants to have better preparation and prediction for busy peak times. 
 
-Users of the system are customers (i.e., those placing an order/food) and restaurants (i.e., receiving payments and orders) 
+Users of the system are customers (i.e., those placing an order/food) and restaurants (i.e., receiving payments and orders)
+
+###### Technologies:
+
+- Python
+- Connexion
+- MySQL
+- Docker
+- React
+- Postman
+- JMeter
+- Microsoft Azure
+- Microservices
+- Git/Github
+
+
