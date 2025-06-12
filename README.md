@@ -1,4 +1,4 @@
-# order status tracking app
+# Order Status Tracking App
 This application simulates an online food ordering service that allows for customers to order from a wider range of restaurants and cuisines.
 
 The events are order requests and payment requests. Customers are able to place an order anytime during the day; however, we expect a peak of orders during the nighttime since most people are off work. This could reach as many as 1000 requests per minutes for both requests (i.e., requests and payment). We implemeted the microservice architecture to distribute and handle different resources, such as receiver server, data server and processing server. Each of the services/servers can be developed, deployed, and maintained independently.
